@@ -1,0 +1,258 @@
+/* ------estilos Index------- */
+
+.sectionPrincipal{
+    display: block;
+    width: 100%;
+    padding: 0%;
+    border: 0%;
+    text-align: center;     
+}
+.video__presentacion {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    object-fit: cover;
+}
+.img__presentacion { /* img principales*/
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    object-fit: cover;
+}
+.article__contenedor {
+    width: 100%;
+    height: 475px;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+}
+.article__contenedorVideo {
+    width: 100%;
+    height: 475px;
+    margin: 0%;
+    padding: 0%;
+}
+.contenedorFlotante1 {/*start contenedores flotantes*/
+    width: 56%;
+    background-color: rgba(174, 202, 22, 0.5);
+    position: absolute;
+    top: 1%;
+    margin-left: 23%;
+    text-align: center;
+    font-family: Staatliches , cursive;
+    border-radius: 5px;
+}
+.contenedorFlotante1 p {
+    font-size: 25px;
+}
+.contenedorFlotante2 {
+    width: 50%;
+    text-align: center;
+    background-color: rgb(174, 202, 22 , 0.5);
+    position: absolute;
+    top:10%;
+    left: 1%;
+    flex-wrap: wrap;
+    font-family: Staatliches , cursive;
+    border-radius: 5px;
+}
+.contenedorFlotante2 h2 {
+    font-size: 50px;
+}
+.contenedorFlotante2 p {
+    font-size: 25px;
+}
+.contenedorFlotante3 {
+    width: 32%;
+    text-align: center;
+    background-color: rgb(174, 202, 22 , 0.5);
+    position: absolute;
+    right: 1%;
+    bottom: 11%;
+    flex-wrap: wrap;
+    font-family: Staatliches , cursive;
+    border-radius: 5px;
+}
+.contenedorFlotante3 h2 {
+    font-size: 50px;
+}
+.contenedorFlotante3 p {/*end contenedores flotantes*/
+    font-size: 25px;
+}
+.sectionSecundaria { /* estilos del segundo section */
+    display: flex;
+    width: 100%;
+    height: 40rem;
+    text-align: center;
+    font-family: Staatliches , cursive;
+}
+.imagenSecundaria {
+    width: 56%;
+}
+.sectionSecundaria a {                      /* estilo de los enlaces */
+    text-decoration: none;
+    color: #551A8B;
+}
+.sectionSecundaria a:hover {                  /*  */
+    color: rgb(172, 41, 41);
+}
+.sectionSecundaria a h2:hover {
+    background-color: rgba(43, 40, 40, 0.2) ;
+}
+.sectionSecundaria a h2 {                     /*estilo del tiulo  */
+    font-size: 30px;
+    font-family:fantasy , sans-serif;
+}
+.sectionSecundaria div ul {                  /* estilo de la lista */
+    list-style: none;
+    margin: 5%;
+    padding: 0;
+}
+.parrafo-diseños {
+    margin: 5%;
+}
+/* fin estilos Index */
+
+/*----estilos Galeria----*/
+main {
+    background-image:url(../imagenes/purty_wood_@2X.png);
+    background-repeat:repeat;
+}
+.main__nav {
+    width:100%;
+    margin: 0%;
+    padding: 0%;
+    position:sticky;
+}
+.menu ,.menu__desple {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+.menu {
+    background-color:rgb(212 210 213);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 10%;
+}
+.menu__list:hover {
+    background-color:rgb(38 29 47 / 20%);
+    border-radius: 5px;
+}
+.link {
+    display: block;
+    padding: 10px;
+    color:indigo;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.menu__desple{
+    display: none;
+    background-color:rgb(74, 163, 192 ,0.7);
+    padding: 20px;
+    transition: all 3s;  
+    position: absolute;
+    z-index: 100;
+}
+.menu__list:hover .menu__desple {
+    display: block;
+    z-index: 3;
+} 
+
+.article__realizados { /* articulos principales */
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.img__galeria {
+    width: 24%;
+    height: 187px;
+    padding:3px;
+    object-fit: cover;
+    filter: brightness(70%);
+    border-radius: 7px;
+    transform: scale(1);
+    transition: 2s;
+}
+.img__galeria:hover {
+    filter: brightness(100%);
+    transform: scale(1.5);
+    z-index: 2;
+    object-fit:cover;
+}
+.TitulosGaleria {
+    font-weight: bolder;
+    font-size: 52px;
+    height: 26px;
+    padding: 28px;
+    background-color:rgb(38 29 47 / 20%);
+    text-align: center;
+    margin: auto;
+    font-family: Staatliches , cursive;
+
+}
+
+/* fin estilos galeria */
+
+/*-----tabla de talles----*/
+.tablaDeTalles {
+    width: 100%;
+    justify-content:center;
+    background-color: #fff700;
+    display: flex;
+}
+
+/* fin tabla de talles */
+
+/* -----estilos carrito----- */
+/* fin estilos carrito */
+
+/* -----estilos contacto----- */
+.mainContact {
+    width: 100%;
+    height: 730px;
+    display: flex;
+}
+.mainConact__section1 {
+    width: 50%;
+    text-align:center;
+    line-height: 3.5rem;
+}
+.mainConact__section2 {
+    width: 50%;
+    display: block;
+}
+fieldset {
+    width: 91%;
+    padding: 22px;
+    margin-top: 2px;
+    border-radius: 3px;
+}
+form {
+    color: rgb(116, 114, 114);
+    border-radius: 6px;
+    padding: 5px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+input , textarea {
+    outline:none;
+    border:none;
+    width: 280px;
+}
+.field {
+    border:solid 1px #ccc;
+    color: rgb(150, 150, 150);
+    padding: 8px;
+}
+.field:focus {
+    border-color:rgb(202, 22, 22);
+}
+/* fin estilos contactos */
+
