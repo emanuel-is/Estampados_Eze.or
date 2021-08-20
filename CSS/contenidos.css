@@ -44,6 +44,9 @@
     font-family: Staatliches , cursive;
     border-radius: 5px;
 }
+.contenedorFlotante1 h2 {
+    font-size: 50px;
+}
 .contenedorFlotante1 p {
     font-size: 25px;
 }
@@ -83,10 +86,13 @@
 }
 .sectionSecundaria { /* estilos del segundo section */
     display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 40rem;
     text-align: center;
     font-family: Staatliches , cursive;
+    background-image:url(../imagenes/tileable_wood_texture_@2X.png);
+    background-repeat:repeat;
 }
 .imagenSecundaria {
     width: 56%;
@@ -188,11 +194,9 @@ main {
 .TitulosGaleria {
     font-weight: bolder;
     font-size: 52px;
-    height: 26px;
     padding: 28px;
     background-color:rgb(38 29 47 / 20%);
     text-align: center;
-    margin: auto;
     font-family: Staatliches , cursive;
 
 }
@@ -203,15 +207,29 @@ main {
 .tablaDeTalles {
     width: 100%;
     justify-content:center;
-    background-color: #fff700;
+    background-image:url(../imagenes/congruent_pentagon.png);
+    background-repeat:repeat;
     display: flex;
 }
-
 /* fin tabla de talles */
-
 /* -----estilos carrito----- */
 /* fin estilos carrito */
-
+/*  ----estilos Nosotros----- */
+.fieldset {
+    text-align: justify;
+    margin: auto;
+    padding: 0%;
+    margin: 4%;
+}     
+.nosotros {
+    padding: 5%;
+    background:#e7f1ff;
+    border-radius: 13px;
+    margin: 4%;
+    font-family: Staatliches;
+}
+@import "animate.css";
+/* fin estilos nosotros */
 /* -----estilos contacto----- */
 .mainContact {
     width: 100%;
@@ -223,12 +241,27 @@ main {
     text-align:center;
     line-height: 3.5rem;
 }
-.mainConact__section2 {
+.mainConact__section1 div {
+    width: 100%;
+    padding: 7%
+}
+.mainConact__section1 h2 {
+    font-size: xxx-large;
+}
+.mainConact__section1 p {
+    font-family:serif;
+    font-size: xx-large;
+}
+.mainConact__section1 a {
+    text-decoration: none;
+    font-size: x-large;
+}
+.mainContact__section2 {
     width: 50%;
     display: block;
 }
 fieldset {
-    width: 91%;
+    width: 100%;
     padding: 22px;
     margin-top: 2px;
     border-radius: 3px;
@@ -238,8 +271,9 @@ form {
     border-radius: 6px;
     padding: 5px;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(204 204 204 / 40%);
     text-align: center;
+    font-size: 20px;
 }
 input , textarea {
     outline:none;
@@ -249,10 +283,30 @@ input , textarea {
 .field {
     border:solid 1px #ccc;
     color: rgb(150, 150, 150);
-    padding: 8px;
+    padding: 3px;
+    background: ghostwhite;
+    border-radius: 15px;
+    font-size: 15px;
 }
 .field:focus {
     border-color:rgb(202, 22, 22);
 }
+@media (max-width:720px) {
+    .mainContact {
+        width: 100%;
+        height: 100%;
+        display:block;
+    }
+    .mainConact__section1 {
+        width: 100%;
+        text-align:center;
+        line-height: 3.5rem;
+    }
+    .mainContact__section2 {
+        width: 100%;
+        display: block;
+    }
+}
+
 /* fin estilos contactos */
 

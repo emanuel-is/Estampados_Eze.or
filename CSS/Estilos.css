@@ -2,7 +2,7 @@
 .body{
     font-family: Georgia, 'Times New Roman', Times, serif;  /* le cambia la fuente a toda la pagina*/
      /**color:black;     le cambiom el color a la fuente. pero todavia no. para que no interfiera con otros colores*/
-    font-size: 1.4rem;                          /*le cambia el tamaño a la fuente */
+    font-size: 1.2rem;                          /*le cambia el tamaño a la fuente */
     line-height: 1.4em;
     margin: 0mm;
     width: 100%;
