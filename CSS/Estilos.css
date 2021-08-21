@@ -73,7 +73,7 @@ header label:hover {
     color: yellow;
 }
 
-
+/* 
 @media (max-width:910px) {
     .header {
         display: block;
@@ -107,7 +107,7 @@ header label:hover {
         margin-left: 0%;
      
     }
-}
+} */
  /*@import url("contenidos.css");  quise importart la otra hojam de estilos pero no me lo tomo. no le encontre la vuelta */
                                 /* lo puse en el link del index. quiero hacer dos css. uno para cosas en comun.
                                 y otro para los contenidos de todas las paginas... o sino uno por cada pagina */
