@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Estilos.css">   <!-- link para estilos de css -->
-    <link rel="stylesheet" href="CSS/contenidos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +14,12 @@
 <body class="body">
     <header class="header" >
         <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"><img class="imagen__menuBurguer" src="./imagenes/eec071442e9a1b8e017c5a7c1853b880.jpg" alt="Menu"></label>
+        <label for="btn-menu"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#b5c753b3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="18" x2="20" y2="18" />
+          </svg></label>
         <nav class="header__menu">
             <ul>                     <!-- menu de navegacion -->
                 <li> <a href="#">Home </a> </li>
@@ -61,7 +65,7 @@
             <div class="card-body">
               <h3 class="card-title">Tazas, Barbijos, Gorras</h3>
               <p class="card-text">Trabajamos con sublimacion y estampado de tazas, Gorras y Barbijos. <br>Podes traer tu diseños o buscar entre los diseños pre-definidos.</p>
-              <a href="./paginas/Galeria.html"><button type="button" class="btn btn-secondary btn-lg">Ir a Galeria</button></a>
+              <a class="boton_link" href="./paginas/Galeria.html"><button type="button" class="btn btn-secondary btn-lg boton_link">Ir a Galeria</button></a>
             </div>
         </div>                                      <!-- section 3/3 -->
         <div class="card bg-secondary p-2 text-dark bg-opacity-50" style="width: 20rem;">
@@ -69,7 +73,7 @@
             <div class="card-body ">
               <h3 class="card-title">Diseños pre-determinados</h3>
               <p class="card-text">Busca entre todos nuetros diseños pre-definidos el que mas te guste, o esa banda que escuchas todo el tiempo, o esa serie ochentosa que nadie la vio pero vos sos fana.</p>
-              <a href="./paginas/Galeria.html"><button type="button" class="btn btn-secondary btn-lg">Ir a Galeria</button></a>
+              <a class="boton_link" href="./paginas/Galeria.html"><button type="button" class="btn btn-secondary btn-lg boton_link">Ir a Galeria</button></a>
             </div>
         </div>
         <div class="card bg-secondary p-2 text-dark bg-opacity-50" style="width: 20rem;" >
@@ -77,13 +81,13 @@
             <div class="card-body">
               <h3 class="card-title">Tus Diseños</h3>
               <p class="card-text">Tenes un negocio, una marca, una banda o simplemente una idea. Nosotros la hacemos realidad. Dejanos tu idea en los comentarios junto con tus datos y nos ponemos en contacto con vos. O subi tu diseño, elegi la prenda, el lugar de la prenda y listo.</p>
-              <a href="./paginas/Galeria.html"><button type="button" class="btn btn-secondary btn-lg">Ir a Galeria</button></a>
+              <a href="./paginas/Galeria.html"><button type="button" class="btn btn-secondary btn-lg boton_link">Ir a Galeria</button></a>
             </div>
         </div>
     </section>
-    <div class="audio--index">
-        <audio src="../Islas_Emanuel_Alejandro/imagenes/10. Change (In The House Of Files).mp3" controls=play loop ></audio>
-    </div>  
+    <section>
+        <audio  class="audio--index" src="../Islas_Emanuel_Alejandro/imagenes/10. Change (In The House Of Files).mp3" controls=play loop ></audio>
+    </section> 
     <footer class="footer">                       <!-- pie de pagina -->
         <div class="divGeneral1">        
             <div class="contactos">                <!-- contactos -->
@@ -103,9 +107,20 @@
                     <a href="./paginas/contactos.html" Redes><h2>Redes</h2</a><br>
                 </div>
                 <div class="imagenRedes">   
-                    <a  href="./paginas/contactos.html"><img src="./imagenes/Facebook.png" alt="Facebook"></a>
-                    <a  href="./paginas/contactos.html"><img src="./imagenes/tweeter.png" alt="tweeter"> </a>
-                    <a  href="./paginas/contactos.html"><img src="./imagenes/Instagram.png" alt="Instagram"> </a>
+                    <a  href="./paginas/contactos.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3359a4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                      </svg></a>
+                    <a  href="./paginas/contactos.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009ded" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                      </svg></a>
+                    <a  href="./paginas/contactos.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ba1889" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                      </svg> </a>
                 </div> 
             </div>
         </div>

@@ -1,0 +1,200 @@
+@import "./contenidos.scss";
+@import "./variables.scss" ;
+/* estilo del body en general */
+.body{
+    font-family: Georgia, 'Times New Roman', Times, serif;  /* le cambia la fuente a toda la pagina*/
+    font-size: 1.2rem;                          /*le cambia el tamaño a la fuente */
+    line-height: 1.4em;
+    margin: 0mm;
+    width: 100%;
+    left: 0mm;
+    background: url(../imagenes/fondo_madera_blanca.jpg) repeat fixed 100%;
+    }   
+    /* estilos del header*/
+ 
+.header {      /* background-color:rgb(0, 0, 0); */
+    background-color:rgb(0, 0, 0,);
+    display:flex;
+    justify-content:space-around; /* aparentemente les deja espacio al rededor */
+    align-items:flex;            /*alineo los componentes arriba de todo*/
+    padding: 0rem;
+    position:sticky;  /* deja el head pegado y le doy */
+    width: 100%;
+    z-index: 2;         /*manejo las capas para que no se superpongan  */
+}
+
+#btn-menu {          /* boton menu responsive */
+    display: none;
+}
+header label {
+    display: none;
+    align-self: center;
+    width: 82px;
+    height: 76px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+    label:hover {
+        cursor: pointer;
+        background: rgba(161, 161, 161, 0.5);
+    }
+ 
+}
+.imagen__menuBurguer {
+    width: 30px;
+}
+.logo {
+    width: 15%;
+    object-fit: cover;
+}
+
+    /* ----------------------------------- */
+                     /* estilos de los links del header*/
+.header__menu {
+    align-self: center;
+
+    ul {                     /* estilos de la linea de*/
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+    }
+    li{                       /*pongo la lista que estaban en bloque, en linea*/
+        border-right: solid 0.8px rgb(121, 120, 120);
+    }       
+    li:hover {
+        background-color: rgb(44, 43, 43);                  
+    }
+    li a {                         /* saco el subrallado de los links */
+        text-decoration: none;
+        font-size: 35px;
+        display: block;
+        padding: 15px;
+    }
+    li a:hover {               /*le cambio el color a los links al pasar el raton*/
+        color: yellow;
+    }
+}
+@media (max-width:910px) {
+    .header {
+        display: block;
+        height: 75px;
+        background:#2b2424cc;
+    }
+    .header label {
+        display: block;
+        z-index: 2;
+        align-self:unset;
+    }
+    .header__menu {
+        position: absolute;
+        align-self:flex-start;
+        width: 50%;
+        margin-left: -100%;
+        transition: all 0.8s;
+    }
+    .logo {
+        display: none;
+    }
+    .header__menu ul li  {
+        border-top: solid #2b2424cc;
+        border-radius: 31px;
+    }
+    .header__menu ul {
+        align-self: center;
+        background-color: #2b2424cc;
+        flex-direction: column;
+        border-radius: 31px;
+    }
+    #btn-menu:checked ~ .header__menu {
+        margin-left: 0%;
+     
+    }
+} 
+ /*@import url("contenidos.css");  quise importart la otra hojam de estilos pero no me lo tomo. no le encontre la vuelta */
+                                /* lo puse en el link del index. quiero hacer dos css. uno para cosas en comun.
+                                y otro para los contenidos de todas las paginas... o sino uno por cada pagina */
+
+.audio--index {
+    width: 100%;
+}
+ /* estilos del footer */
+.footer {
+    background-image: linear-gradient(to top, rgb(0, 0, 0) , rgba(44, 44, 41, 0.432));
+
+     /* estilo de contactos y redes*/
+    .divGeneral1 {            /*contenedor padre*/
+        height: 194px;
+        width: 100%;
+        display:flex;
+        justify-content: space-around;
+    }
+    .contactos {   /*contenedor de contactos */
+        color: #a0d8d8;
+        width: 50%;
+        display:block;
+        text-align:center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .footer__redes {        /*contenedor de redes  */
+        color: #a0d8d8;
+        width: 50%;
+        display:block;
+        text-align:center;
+    }
+    .TituloRedes a {
+        display:inline-block;
+        width: 100%;
+        text-decoration:none;
+        color: #a0d8d8;
+    }
+    .imagenRedes {
+        width: 100%;
+        display:inline-block;
+   }  
+   .divgeneral2 {     /* estilo mapa - medios de pago - envios */
+       width: 100%;
+       display: inline-flex;
+   }
+   .divgeneral2 .footer__DondeEncotrarnos {   /* mapa */    
+       width: 50%;
+       display: block;
+       text-align: center;
+       color: #a0d8d8;
+   }
+   .divgeneral2 .footer__PagosEnvios {     /* estilo pagos y envio */   
+       width: 50%;
+       display: block;
+       text-align: center;
+       font-family: 'Courier New', Courier, monospace;
+       color: #a0d8d8;
+       list-style:inside ;
+   }
+     /* estilo footer legale */
+    .footer__legales {
+        background-color:black;
+        color:darkcyan;
+        text-align: center;
+        font-size: 21px;
+        font-family: 'Arial Narrow';
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .p {
+        height: 29px;
+        margin: 0%;
+        padding: 0%;
+    } 
+}                   
+
+@media screen and (max-width: 790px) {   /* responsive footer */
+    .divGeneral1 {
+        display: block;
+        text-align: -webkit-center;
+    }
+    .divgeneral2 {
+        display: block;
+        text-align: -webkit-center;
+    }
+}

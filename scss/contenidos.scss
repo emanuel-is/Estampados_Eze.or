@@ -1,0 +1,305 @@
+@import "./variables.scss";
+/* ------estilos Index------- */
+.sectionPrincipal{
+  display: block;
+  width: 100%;
+  padding: 0%;
+  border: 0%;
+  text-align: center;   
+  .video__presentacion {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    object-fit: cover;  
+  }
+  .img__presentacion { /* img principales*/
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    object-fit: cover;
+  }
+  .article__contenedor {
+    width: 100%;
+    height: 586px;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+  }
+  .article__contenedorVideo {
+    width: 100%;
+    height: 475px;
+    margin: 0%;
+    padding: 0%;
+  }
+  .contenedorFlotante1 {/*start contenedores flotantes*/
+    width: 56%;
+    top: 1%;
+    margin-left: 23%;
+    border-radius: 5px;
+  }
+  @each $article__contenedor in contenedorFlotante1, contenedorFlotante2, contenedorFlotante3 {
+    .#{$article__contenedor} {
+      background-color: $background-flotante;
+      font-family: $font-family;
+      position: absolute;
+      text-align: center;
+      border-radius: 5px;
+      h2 {
+        font-size: $Titulo-size;
+      }
+      p {
+        font-size: $Parrafo-size;
+      }
+    }
+  }
+  .contenedorFlotante2 {
+    width: 50%;
+    top:10%;
+    left: 1%;
+    flex-wrap: wrap;
+  }
+  .contenedorFlotante3 {
+    width: 32%;
+    right: 1%;
+    bottom: 11%;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    /*end contenedores flotantes*/
+  }
+}
+.sectionSecundaria { /* estilos del segundo section */
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: $font-family;
+  background:url(../imagenes/fondo_madera_blanca.jpg)
+  repeat fixed 100%;
+
+  .imagen_card {
+    height: 300px;
+  }
+  .card-title {
+    font-size: $Titulo-size -5px;
+  } 
+  .card-text {
+    font-size:$Parrafo-size -5px;
+  }
+  .boton_link {
+    font-size:$Link-size;
+  }
+}
+/* fin estilos Index */
+
+/*----estilos Galeria----*/
+.main__nav {
+  width:100%;
+  margin: 0%;
+  padding: 0%;
+  position:sticky;
+  
+  .menu ,.menu__desple {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+  }
+  .menu {
+    background-color:#2b2424cc;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 10%;
+
+  }
+  .menu__list:hover {
+    background-color:rgb(51, 48, 48);
+    border-radius: 5px;
+  }
+  .link {
+    display: block;
+    padding: 10px;
+    color:cornsilk;
+    font-size: $Link-size;
+    text-decoration: none;
+  }
+  .menu__desple{
+    display: none;
+    background-color:#2b2424cc;
+    padding: 20px;
+    transition: all 3s;  
+    position: absolute;
+    z-index: 100;
+  }
+  .menu__list:hover .menu__desple {
+    display: block;
+    z-index: 3;
+  } 
+}
+.article__realizados { /* articulos principales */
+  display: flex;
+  width: 100%;
+  justify-content:center;
+  flex-wrap: wrap;
+  .img__galeria {
+    width: 24%;
+    height: 187px;
+    padding:3px;
+    object-fit: cover;
+    filter: brightness(70%);
+    border-radius: 7px;
+    transform: scale(1);
+    transition: 2s;
+  }
+  .img__galeria:hover {
+    filter: brightness(100%);
+    transform: scale(1.5);
+    z-index: 2;
+    object-fit:cover;
+  }
+}
+.TitulosGaleria {
+  font-weight: bolder;
+  width: 95%;
+  margin-left: 3%;
+  font-size:$Titulo-size;
+  padding: 28px;
+  background-color:#261d2f33;
+  text-align: center;
+  font-family: $font-family;
+}
+/* fin estilos galeria */
+
+/*-----tabla de talles----*/
+.tablaDeTalles {
+  width: 100%;
+  justify-content:center;
+  background:url(../imagenes/congruent_pentagon.png)
+      repeat fixed 50% 50%;
+  display: flex;
+}
+/* fin tabla de talles */
+/*  ----estilos Nosotros----- */
+.fieldset {
+  text-align: justify;
+  margin: auto;
+  padding: 0%;
+  margin: 4%;
+}     
+.nosotros {
+  padding: 5%;
+  width: 95%;
+  background: #e7f1ff;
+  border-radius: 13px;
+  margin: 3%;
+  h1 {
+    font-family:$font-family;
+    font-size:$Titulo-size;
+  }
+  p {
+    font-family:$font-family;
+    font-size: $Parrafo-size;
+  }
+}
+.accordion {
+  h2 {
+    font-family:$font-family ;
+  }
+  p {
+    font-family:$font-family ;
+    font-size: $parrafo2-size;
+  }
+  .color_body {
+    background: lavender;
+  }
+}
+
+/* fin estilos nosotros */
+/* -----estilos contacto----- */
+.mainContact {
+  width: 100%;
+  height: 730px;
+  display: flex;
+  .mainConact__section1 {
+    width: 50%;
+    text-align:center;
+    line-height: 3.5rem;
+    div {
+      width: 100%;
+      padding: 7%
+    }
+    h2 {
+      font-size: $Titulo-size;
+      font-family:$font-family;
+    }
+    p {
+      font-family: $font-family;
+      font-size: $Parrafo-size;
+      background: #fff8dc80;
+      color: darkred;
+    }
+    a {
+      text-decoration: none;
+      font-size:$Link-size;
+      background: #fff8dc80;
+      color: darkred;
+      font-family: $font-family ;
+    }
+  }
+  .mainContact__section2 {
+    width: 50%;
+    display: block;
+    fieldset {
+      width: 92%;
+      border-radius: 13px;
+      font-family: Staatliches;
+      font-size:medium;
+      margin: 3%;
+    }
+    form {
+      color: rgb(10, 10, 10);
+      border-radius: 6px;
+      padding: 5px;
+      width: 100%;
+      background-color: #cccccc66;
+      text-align: center;
+      font-size: 20px;
+    }
+    input , textarea {
+      outline:none;
+      border:none;
+      width: 280px;
+    }
+    .field {
+      border:solid 1px #f8f8ff;
+      color: black;
+      padding: 3px;
+      background: ghostwhite;
+      border-radius: 15px;
+      font-size: $parrafo2-size;
+    }
+    .field:focus {
+      border-color:rgb(87, 48, 48);
+    }
+  }
+}
+@media (max-width:720px) {
+  .mainContact {
+      width: 100%;
+      height: 100%;
+      display:block;
+      .mainConact__section1 {
+        width: 100%;
+        text-align:center;
+        line-height: 3.5rem;
+      }
+    .mainContact__section2 {
+      width: 100%;
+      display: block;
+    }
+  } 
+}
+/* fin estilos contactos */

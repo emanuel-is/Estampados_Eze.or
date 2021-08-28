@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Estilos.css">
-    <link rel="stylesheet" href="../CSS/contenidos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +15,12 @@
 <body class="body">
     <header class="header" >
         <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"><img class="imagen__menuBurguer" src="../imagenes/eec071442e9a1b8e017c5a7c1853b880.jpg" alt="Menu"></label>
+        <label for="btn-menu"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#e7f1ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg></label>
         <nav class="header__menu">
             <ul>                     <!-- menu de navegacion -->
                 <li> <a href="../index.html">Home </a> </li>
@@ -50,7 +54,7 @@
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                <div class="accordion-body color_body">
                     <p>VINILO: El vinilo de corte consiste en cortar el diseño de un material termoadhesivo para luego estamparlo
                         en la prenda escogida. Este es un método muy utilizado a la hora de personalizar uniformes deportivos ya
                         que es ideal para diseños con pocos colores, nombres y números. También para logos o diseños personalizados,
@@ -78,7 +82,7 @@
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                <div class="accordion-body color_body">
                     <p>
                         Lo ideal es que los mandes convertidos a curvas en Corel o Illustrator, sino con un jpg o una
                          descripción en el mail podemos cotizarte.
@@ -93,7 +97,7 @@
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                <div class="accordion-body color_body">
                     <p>
                         Por supuesto, contactate indicando las cantidades que necesitas así te cotizamos bien.
                         Con respecto a las compras por mayor, la forma de pago es: 50% por adelantado, en concepto de seña.
@@ -109,7 +113,7 @@
                   </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
+                  <div class="accordion-body color_body">
                     <P>
                         Trabajamos por medio de motos en pedidos que son chicos, dependiendo de las prendas y de la distancia. 
                         Tambien hacemos envios por correo argentino, oca, andreani o encomiendas. Lo que mas le convenga a
@@ -125,7 +129,7 @@
                   </button>
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
+                  <div class="accordion-body color_body">
                     <p>
                         En nuestra sección Talles y Colores podes chequear las medidas de todas las prendas.
                         Hay mini remeras para bebes hasta XXL en adultos, tenemos remeras con corte de mujer y otras unisex.
@@ -141,7 +145,7 @@
                   </button>
                 </h2>
                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
+                  <div class="accordion-body color_body">
                     <p>
                         Si, todos los cambios que quieras que realicemos sobre tu pedido,o si tenes varias ideas 
                          por favor indícalo en la parte de Comentarios para que podamos cerrar un diseño en concreto.
@@ -156,7 +160,7 @@
                   </button>
                 </h2>
                 <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
+                  <div class="accordion-body color_body">
                     <p>
                         Las remeras estampadas deben lavarse con agua fría y sin centrifugar, 
                         deben plancharse al revés o sin tocar la estampa para preservarla.
@@ -171,7 +175,7 @@
                   </button>
                 </h2>
                 <div id="collapseHeigth" class="accordion-collapse collapse" aria-labelledby="headingHeigth" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
+                  <div class="accordion-body color_body">
                     <p>
                       TODOS nuestros productos son estampados a pedido.NO contamos con un stock con los respectivos estampados/ prendas.
                       Al trabajar con la modalidad de estampados a pedido - Los cambios o devoluciones SÓLO SON APLICADOS en algunos de los siguientes casos:
@@ -183,15 +187,8 @@
                 </div>
               </div>
           </div>
-
     </fieldset>
-
-
-    
-
-
-
-    <audio src="../imagenes/10. Change (In The House Of Files).mp3" controls=play loop ></audio>
+    <audio class="audio--index" src="../imagenes/10. Change (In The House Of Files).mp3" controls=play loop ></audio>
     <footer class="footer">                       <!-- pie de pagina -->
         <div class="divGeneral1">        
             <div class="contactos">                <!-- contactos -->
@@ -211,10 +208,21 @@
                     <a href="contactos.html" Redes><h2>Redes</h2</a><br>
                 </div>
                 <div class="imagenRedes">   
-                    <a  href="contactos.html"><img src="../imagenes/Facebook.png" alt="Facebook"></a>
-                    <a  href="contactos.html"><img src="../imagenes/tweeter.png" alt="tweeter"> </a>
-                    <a  href="contactos.html"><img src="../imagenes/Instagram.png" alt="Instagram"> </a>
-                </div> 
+                  <a  href="contactos.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3359a4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg></a>
+                  <a  href="contactos.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009ded" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg></a>
+                  <a  href="contactos.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ba1889" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <rect x="4" y="4" width="16" height="16" rx="4" />
+                      <circle cx="12" cy="12" r="3" />
+                      <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg> </a>
+              </div>  
             </div>
         </div>
         <div class="divgeneral2">
