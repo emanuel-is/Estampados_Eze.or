@@ -1,29 +1,29 @@
 @import "./contenidos.scss";
 @import "./variables.scss" ;
 /* estilo del body en general */
-.body{
-    font-family: Georgia, 'Times New Roman', Times, serif;  /* le cambia la fuente a toda la pagina*/
-    font-size: 1.2rem;                          /*le cambia el tamaño a la fuente */
+.body {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 1.2rem;                       
     line-height: 1.4em;
     margin: 0mm;
     width: 100%;
     left: 0mm;
     background: url(../imagenes/fondo_madera_blanca.jpg) repeat fixed 100%;
-    }   
+}   
     /* estilos del header*/
  
-.header {      /* background-color:rgb(0, 0, 0); */
+.header {      
     background-color:rgb(0, 0, 0,);
     display:flex;
-    justify-content:space-around; /* aparentemente les deja espacio al rededor */
-    align-items:flex;            /*alineo los componentes arriba de todo*/
+    justify-content:space-around; 
+    align-items:flex;            
     padding: 0rem;
-    position:sticky;  /* deja el head pegado y le doy */
+    position:sticky;  
     width: 100%;
-    z-index: 2;         /*manejo las capas para que no se superpongan  */
+    z-index: 2;         
 }
 
-#btn-menu {          /* boton menu responsive */
+#btn-menu {       /* boton menu responsive */
     display: none;
 }
 header label {
@@ -46,8 +46,6 @@ header label {
     width: 15%;
     object-fit: cover;
 }
-
-    /* ----------------------------------- */
                      /* estilos de los links del header*/
 .header__menu {
     align-self: center;
@@ -60,19 +58,19 @@ header label {
         background-color: rgb(0, 0, 0);
         display: flex;
     }
-    li{                       /*pongo la lista que estaban en bloque, en linea*/
+    li{                       
         border-right: solid 0.8px rgb(121, 120, 120);
     }       
     li:hover {
         background-color: rgb(44, 43, 43);                  
     }
-    li a {                         /* saco el subrallado de los links */
+    li a {                    
         text-decoration: none;
-        font-size: 35px;
+        font-size: 25px;
         display: block;
         padding: 15px;
     }
-    li a:hover {               /*le cambio el color a los links al pasar el raton*/
+    li a:hover {              
         color: yellow;
     }
 }
@@ -112,10 +110,6 @@ header label {
      
     }
 } 
- /*@import url("contenidos.css");  quise importart la otra hojam de estilos pero no me lo tomo. no le encontre la vuelta */
-                                /* lo puse en el link del index. quiero hacer dos css. uno para cosas en comun.
-                                y otro para los contenidos de todas las paginas... o sino uno por cada pagina */
-
 .audio--index {
     width: 100%;
 }
@@ -124,55 +118,58 @@ header label {
     background-image: linear-gradient(to top, rgb(0, 0, 0) , rgba(44, 44, 41, 0.432));
 
      /* estilo de contactos y redes*/
-    .divGeneral1 {            /*contenedor padre*/
-        height: 194px;
+    .divGeneral1 {          
         width: 100%;
         display:flex;
         justify-content: space-around;
+
+        .contactos {   /*contenedor de contactos */
+            color: #a0d8d8;
+            /*  width: 50%;*/
+            display:block;
+            text-align:center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .footer__redes {        /*contenedor de redes  */
+            color: #a0d8d8;
+            /*  width: 50%;*/
+            display:block;
+            text-align:center;
+        }
+        .TituloRedes a {
+            display:inline-block;
+            width: 100%;
+            text-decoration:none;
+            color: #a0d8d8;
+        }
+        .imagenRedes {
+            width: 100%;
+            display:inline-block;
+        }
+        .footer__Pagos {
+            text-decoration: none;
+            color: #a0d8d8;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+             li {
+                list-style: none;
+            }
+        }  
     }
-    .contactos {   /*contenedor de contactos */
-        color: #a0d8d8;
-        width: 50%;
-        display:block;
-        text-align:center;
-        font-family: 'Courier New', Courier, monospace;
-    }
-    .footer__redes {        /*contenedor de redes  */
-        color: #a0d8d8;
-        width: 50%;
-        display:block;
-        text-align:center;
-    }
-    .TituloRedes a {
-        display:inline-block;
+    .divgeneral2 {     /* estilo mapa - medios de pago - envios */
         width: 100%;
-        text-decoration:none;
-        color: #a0d8d8;
+        display: inline-flex;
+        .footer__Envios {     /* estilo pagos y envio */   
+            width: 95%;
+            display: block;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            color: #a0d8d8;
+            list-style: inside;
+            margin: 13px 4%;
+        }
     }
-    .imagenRedes {
-        width: 100%;
-        display:inline-block;
-   }  
-   .divgeneral2 {     /* estilo mapa - medios de pago - envios */
-       width: 100%;
-       display: inline-flex;
-   }
-   .divgeneral2 .footer__DondeEncotrarnos {   /* mapa */    
-       width: 50%;
-       display: block;
-       text-align: center;
-       color: #a0d8d8;
-   }
-   .divgeneral2 .footer__PagosEnvios {     /* estilo pagos y envio */   
-       width: 50%;
-       display: block;
-       text-align: center;
-       font-family: 'Courier New', Courier, monospace;
-       color: #a0d8d8;
-       list-style:inside ;
-   }
-     /* estilo footer legale */
-    .footer__legales {
+    .footer__legales { /* estilo footer legale */
         background-color:black;
         color:darkcyan;
         text-align: center;
@@ -187,14 +184,3 @@ header label {
         padding: 0%;
     } 
 }                   
-
-@media screen and (max-width: 790px) {   /* responsive footer */
-    .divGeneral1 {
-        display: block;
-        text-align: -webkit-center;
-    }
-    .divgeneral2 {
-        display: block;
-        text-align: -webkit-center;
-    }
-}

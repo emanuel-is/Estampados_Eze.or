@@ -91,6 +91,12 @@
   .boton_link {
     font-size:$Link-size;
   }
+  .boton1 {
+    margin-top: 26%;
+  }
+  .boton2 {
+    margin-top: 16%;
+  }
 }
 /* fin estilos Index */
 
@@ -285,6 +291,13 @@
       border-color:rgb(87, 48, 48);
     }
   }
+  .DondeEncotrarnos {     
+    width: 30%;
+    display: block;
+    text-align: center;
+    font-size: $Titulo-size;
+    font-family:$font-family;
+  }  
 }
 @media (max-width:720px) {
   .mainContact {
@@ -300,6 +313,6 @@
       width: 100%;
       display: block;
     }
-  } 
+  }
 }
 /* fin estilos contactos */
